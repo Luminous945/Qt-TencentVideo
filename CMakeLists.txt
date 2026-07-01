@@ -22,10 +22,15 @@ file(GLOB_RECURSE UIS
     src/*.ui
 )
 
+file(GLOB_RECURSE RES
+    resources/*.qrc
+)
+
 add_executable(Tencne
     ${SOURCES}
     ${HEADERS}
     ${UIS}
+    ${RES}
 )
 
 target_link_libraries(Tencne Qt6::Widgets)

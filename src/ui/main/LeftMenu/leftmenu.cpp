@@ -17,6 +17,9 @@ LeftMenu::LeftMenu(QWidget* parent)
 	connect(ui->listWidget, &QListWidget::currentRowChanged, this, [=](int row) {
 		emit currentRowChanged(row);
 	});
+
+	ui->listWidget->setCurrentRow(0);
+	ui->listWidget->setFocus();
 }
 LeftMenu::~LeftMenu() {
 

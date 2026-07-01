@@ -19,6 +19,10 @@ public:
 	MainWindow(QWidget* parent = nullptr);
 	~MainWindow();
 
+	void mousePressEvent(QMouseEvent* event);
+
+	void mouseMoveEvent(QMouseEvent* event);
+
 
 private:
 	Ui::MainWindow* ui;
@@ -27,4 +31,5 @@ private:
 	TopBar* topBar;
 	LeftMenu* leftMenu;
 	RightContent* rightContent;
+	QPoint m_dragPos;
 };

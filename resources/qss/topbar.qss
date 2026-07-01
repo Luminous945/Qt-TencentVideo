@@ -1,0 +1,93 @@
+#logoTextLabel
+{
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    font-family: "Microsoft YaHei";
+}
+
+QLineEdit#searchEdit {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    font-size: 13px;
+}
+
+QLabel#hint{
+    background-color: #1e1e1e;
+    color:#888;
+}
+
+QToolButton{
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+QToolButton:hover {
+    background-color: #2a2a2a;
+}
+
+QToolButton#vipButton{
+    color: #FFD700;
+}
+
+QToolButton#loginButton {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: 15px;
+}
+
+QToolButton#loginButton:hover {
+    background-color: white;
+}
+
+QToolButton#loginButton:pressed {
+    background-color: #e0e0e0;
+}
+
+QFrame#frame {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+}
+
+QLineEdit#searchEdit {
+    background: transparent;   /* 不单独绘制背景 */
+    border: none;              /* 去掉边框 */
+    outline: none;             /* Qt 有些版本可忽略，但写上没问题 */
+    color: white;              /* 输入文字颜色 */
+    selection-background-color: #3d7eff;
+    selection-color: white;
+}
+
+QToolButton#searchButton{
+    background: transparent;
+    padding: 0px;
+    border: none;
+    border-right: 1px solid #dcdcdc;
+    padding-right: 8px;
+    color:#888;
+}
+
+QToolButton#tableButton{
+    background: transparent;
+    font-size: 15px;
+    color:#888;
+}
+
+QToolButton#searchButton:hover {
+    background-color: #3a3a3a;
+}
+
+QToolButton#tableButton:hover {
+    background-color: #3a3a3a;
+}

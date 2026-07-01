@@ -1,5 +1,5 @@
 
-
+#include <QMouseEvent>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget* parent)
 	, ui(new Ui::MainWindow)
 {
 	ui->setupUi(this);
-
+	setWindowFlags(Qt::FramelessWindowHint | Qt::Window);
 	mainLayout = new QVBoxLayout(ui->centralwidget);
 
 	topBar = new TopBar;
@@ -27,6 +27,19 @@ MainWindow::MainWindow(QWidget* parent)
 
 	connect(leftMenu, &LeftMenu::currentRowChanged, rightContent, &RightContent::onCurrentRowChanged);
 
+	//topBar
+	connect(topBar, &TopBar::minButtonClicked, this, [=]() {
+		this->showMinimized();
+	});
+	connect(topBar, &TopBar::maxButtonClicked, this, [=]() {
+		if (isMaximized())
+			showNormal();
+		else
+			showMaximized();
+	});
+	connect(topBar, &TopBar::closeButtonClicked, this, [=]() {
+		this->close();
+	});
 }
 
 
@@ -34,4 +47,20 @@ MainWindow::MainWindow(QWidget* parent)
 
 MainWindow::~MainWindow() {
 
+}
+
+void MainWindow::mousePressEvent(QMouseEvent* event)
+{
+	if (event->button() == Qt::LeftButton)
+	{
+		m_dragPos = event->globalPosition().toPoint() - frameGeometry().topLeft();
+	}
+}
+
+void MainWindow::mouseMoveEvent(QMouseEvent* event)
+{
+	if (event->buttons() & Qt::LeftButton)
+	{
+		move(event->globalPosition().toPoint() - m_dragPos);
+	}
 }

@@ -6,18 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>742</width>
-    <height>68</height>
+    <width>1039</width>
+    <height>218</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_3">
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
     <widget class="QLabel" name="logoLabel">
      <property name="text">
-      <string>LOGO</string>
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../../resources/Resource.qrc">:/logo/tv-logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="logoTextLabel">
+     <property name="text">
+      <string>腾讯视频</string>
      </property>
     </widget>
    </item>
@@ -28,17 +41,46 @@
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>52</width>
+       <width>40</width>
        <height>20</height>
       </size>
      </property>
     </spacer>
    </item>
    <item>
-    <widget class="QLineEdit" name="searchEdit">
-     <property name="text">
-      <string>搜索框</string>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="searchEdit">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="searchButton">
+        <property name="text">
+         <string>搜索</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tableButton">
+        <property name="text">
+         <string>片库</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
    <item>
@@ -48,7 +90,7 @@
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>52</width>
+       <width>40</width>
        <height>20</height>
       </size>
      </property>
@@ -127,6 +169,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../../../resources/Resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/topbar.qss</file>
+        <file>button/vip.png</file>
+        <file>button/download.png</file>
+        <file>button/game.png</file>
+        <file>button/history.png</file>
+        <file>button/more.png</file>
+        <file>button/max.png</file>
+        <file>button/close.png</file>
+        <file>button/min.png</file>
+        <file>logo/tv-logo.png</file>
+        <file>button/search.png</file>
+    </qresource>
+</RCC>
