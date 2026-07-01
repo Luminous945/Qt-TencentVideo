@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeftMenu</class>
+ <widget class="QWidget" name="LeftMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>117</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QListWidget" name="listWidget">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>首页</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>你正在追</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VIP会员</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>电视剧</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>电影</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>综艺</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>动漫</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>少儿</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NBA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>短剧</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>传奇游戏库</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>记录片</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>体育</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>狗狗爱看</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>游戏</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>中视频</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>短视频</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>小游戏</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>F1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>温网</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>WWE</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>WNBA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>知识</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>学堂</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>艺术</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>时尚</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>音乐</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>生活</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>汽车</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>育儿</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>游戏礼包</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>棋牌游戏库</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>小说</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>科技</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>全部频道</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
